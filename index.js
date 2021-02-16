@@ -2,6 +2,8 @@
 
 /*MAKE SURE TO RETURN ALL OF THE ANSWERS ON THESE TASKS, IF YOU DON'T, THE AUTOGRADER WILL NOT WORK*/
 
+console.log("Hello World");
+
 /*
 When doing these tasks, we recommend using console.log to test the output of your code to make sure it works correctly.
 This will usually entail console logging the answer directly or console logging the invocation (call) of the function so when it
@@ -18,7 +20,12 @@ Do the following:
    HINT: no function required
 */
 
-
+var votingAge = 18;
+if(votingAge >= 18){
+  console.log('True')
+} else {
+  console.log('False')
+}
 
 /*
 Task 1b - Values
@@ -31,9 +38,12 @@ Do the following:
    HINT: no function required
 */
 
-
-
-
+var valueOne = 2;
+var valueTwo = 4;
+if(valueTwo >= 4){
+  valueOne = valueOne + valueTwo;
+  console.log(valueOne);
+}
 
 /*
 Task 1c - Convert Strings to Numbers
@@ -46,8 +56,9 @@ Do the following:
    HINT: look up the Number method
 */
 
-
-
+var string = "1999";
+parseInt(string);
+console.log(string);
 
 /*
 Task 1d - Multiply
@@ -58,8 +69,8 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
+function multiply(a, b){
+  return a * b;
   }
 
 
