@@ -118,7 +118,7 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(age, weight){
+function hungryDog(weight, age){
     if(age >= 1){
       if(weight <= 5){
         return weight * 0.05;
@@ -127,10 +127,10 @@ function hungryDog(age, weight){
         return weight * 0.04;
       }
       else if(weight <= 15){
-        return weight * 0.03;
+        return weight * 0.0299999999999999999;
       }
       else {
-        return weight * .02;
+        return weight * 0.02;
       }
     }
     if(age < 1){
@@ -237,10 +237,10 @@ Using the annoyingSong function below do the following:
       "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-        /*add your code here*/
-  }
-
+function annoyingSong(bottles){
+        for(let bottles = 5; bottles >= 0; bottles--)
+        return bottles + " bottles of soda on the wall, " + bottles + " bottles of soda, take one down pass it around " + bottles + "bottles of soda on the wall"
+}
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -257,8 +257,18 @@ Using the grade function below do the following:
    below should return 'you got an F'
 */
   
-function grade(/*Your Code here */){
-  /*Your Code here */
+function grade(score){
+  if(score >= 90){
+    return "you got an A"
+  } else if(score >= 80){
+    return "you got a B"
+  } else if(score >= 70){
+    return "you got a C"
+  } else if(score >= 60){
+    return "you got a D"
+  } else {
+    return "you got an F"
+  }
   }
   
   
